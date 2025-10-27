@@ -1564,6 +1564,95 @@ body {
   z-index: 1;
 }
 
+/* ========================= */
+/* RESPONSIVE UNTUK TABLET */
+/* ========================= */
+@media (max-width: 768px) {
+  .portfolio-container {
+    flex-direction: column;
+  }
+
+  .tabs {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .tab-con {
+    display: none;
+  }
+
+  .tab {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    white-space: nowrap;
+  }
+
+  .content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .project-card img {
+    height: 100px;
+  }
+}
+
+/* ========================= */
+/* RESPONSIVE UNTUK HP (max 415px) */
+/* ========================= */
+@media (max-width: 415px) {
+  .portfolio-container {
+    flex-direction: column;
+  }
+
+  .tabs {
+    width: 100%;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .tab {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .tab-con {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 12px;
+  }
+
+  .project-card {
+    padding: 8px;
+  }
+
+  .project-card img {
+    height: 90px;
+  }
+
+  .project-card p {
+    font-size: 12px;
+  }
+}
+
 /* Shape biru di belakang tab */
 .tab-con::before {
   content: "";
@@ -2236,5 +2325,110 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* ===================== MOBILE VIEW ===================== */
+@media (max-width: 415px) {
+  /* General */
+  body {
+    font-size: 14px;
+  }
+  section {
+    padding: 50px 5%;
+  }
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .logo {
+    font-size: 1.3rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 80px 5%;
+  }
+  .hero-content h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+  .btn-cta {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* About */
+  .about {
+    text-align: center;
+  }
+  .about img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Services */
+  .service-container {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+  .card h3 {
+    font-size: 1.1rem;
+  }
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  /* Portfolio */
+  .project-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .project-card img {
+    height: 150px;
+  }
+  .project-card h3 {
+    font-size: 1rem;
+  }
+  .project-card p {
+    font-size: 0.85rem;
+  }
+
+  /* Contact */
+  .contact h2 {
+    font-size: 1.3rem;
+  }
+  .contact ul {
+    gap: 5px;
+  }
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .contact form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.8rem;
+    padding: 15px 0;
   }
 }
