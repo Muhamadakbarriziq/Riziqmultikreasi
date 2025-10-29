@@ -1605,6 +1605,10 @@ body {
   .project-card img {
     height: 100px;
   }
+
+  .gallery-shape-wrap {
+    display: none;
+  }
 }
 
 /* ========================= */
@@ -2368,6 +2372,9 @@ footer {
     padding: 10px 20px;
     font-size: 0.9rem;
   }
+  .hero-image {
+    display: none;
+  }
 
   /* About */
   .about {
@@ -2406,6 +2413,10 @@ footer {
   }
   .project-card p {
     font-size: 0.85rem;
+  }
+
+  .gallery-shape-wrap {
+    display: none;
   }
 
   /* Contact */
